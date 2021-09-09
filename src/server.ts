@@ -1,6 +1,11 @@
-import express from 'express';
+
+import 'reflect-metadata'// Ele éimportante sempre vir em primeiro.
+import express from "express";
+import "./database";
 
 const app = express();
+
+
 
 app.get("/l", (req, res)=> {
     return res.json({ message: "Hello World - Pirmeira API"});
