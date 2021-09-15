@@ -1,10 +1,10 @@
-import { Entity } from "typeorm";
-import { v4 as uuid } from "uuid"
+import { Column, CreateDateColumn, Entity, PrimaryColumn } from "typeorm";
+import { v4 as uuid } from "uuid";
 
 @Entity("users")
 class User {
 
-    @PrymaryColumn()
+    @PrimaryColumn()
     readonly id: string;
 
     @Column()
@@ -13,7 +13,7 @@ class User {
     @Column()
     email: string;
 
-    @CreatedDateColumn()
+    @CreateDateColumn()
     created_at: Date;
 
     constructor(){
