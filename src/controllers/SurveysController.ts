@@ -1,13 +1,16 @@
 import { Request, Response } from "express";
-import { getCustomRepository } from "typeorm";
+import { getCustomRepository} from "typeorm";
 import { SurveysRepository } from "../repositories/SurveysRepository";
+
+
 
 class SurveysController {
     async create(req: Request, res: Response) {
         const { title, description } = req.body;
 
         const surveysRepository = getCustomRepository (SurveysRepository);
-        const survey = surveysRepository.create({
+        
+        const survey = surveysRepository.create ({
             title,
             description
         });
