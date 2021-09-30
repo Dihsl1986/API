@@ -37,15 +37,25 @@ export class CreateSurveysUsers1632968244671 implements MigrationInterface {
                             name: "FKUser",
                             referencedTableName: "users",
                             referencedColumnNames: ["id"],
-                            columnNames: ["user_id"]
-                        }
-                    ]
+                            columnNames: ["user_id"],
+                            onDelete: "CASCADE",
+                            onUpdate: "CASCADE"
+                        },
+                        {
+                            name: "FKSurvey",
+                            referencedTableName: "surveys",
+                            referencedColumnNames: ["id"],
+                            columnNames: ["survey_id"],
+                            onDelete: "CASCADE",
+                            onUpdate: "CASCADE"
+                        },
+                    ],
                 })
-            )
+            );
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
-
+            await queryRunner.dropTable("surveys_users");
     }
-
+ 
 }
