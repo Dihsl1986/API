@@ -5,6 +5,10 @@ import {v4 as uuid} from "uuid";
 
 @Entity("users")
 class User {
+    description: string;
+    title(email: any, title: any, description: any) {
+        throw new Error("Method not implemented.");
+    }
 
     @PrimaryColumn()
     readonly id: string;
