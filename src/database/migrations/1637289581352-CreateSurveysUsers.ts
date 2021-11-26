@@ -27,7 +27,7 @@ export class CreateSurveysUsers1637289581352 implements MigrationInterface {
 
                 },
                 {
-                    name: "create_at",
+                    name: "created_at",
                     type: "timestamp",
                     default: "now()"
                 },
