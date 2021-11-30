@@ -6,7 +6,7 @@
   "author": "Diego Santos Lima <dihsl1986@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
+    "dev": " ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
     "typeorm": "ts-node-dev node_modules/typeorm/cli.js",
     "test": " ENV=test jest",
     "posttest": "rm ./src/database/database.test.sqlite"
@@ -19,7 +19,8 @@
     "reflect-metadata": "^0.1.13",
     "sqlite3": "^5.0.2",
     "typeorm": "^0.2.40",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
