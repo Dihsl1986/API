@@ -9,7 +9,7 @@ class UserController {
         const { name, email } = request.body;
 
         const schema = yup.object().shape({
-            name: yup.string().require(),
+            name: yup.string().required(),
             email: yup.string().email().required(),
         });
 
