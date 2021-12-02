@@ -8,8 +8,7 @@
   "scripts": {
     "dev": " ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
     "typeorm": "ts-node-dev node_modules/typeorm/cli.js",
-    "test": " ENV=test jest",
-    "posttest": "rm ./src/database/database.test.sqlite"
+    "test": " ENV=test jest -i"   
   },
   "dependencies": {
     "@types/node": "^16.11.7",
