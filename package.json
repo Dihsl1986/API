@@ -8,11 +8,12 @@
   "scripts": {
     "dev": " ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
     "typeorm": "ts-node-dev node_modules/typeorm/cli.js",
-    "test": " ENV=test jest -i"   
+    "test": " ENV=test jest -i"
   },
   "dependencies": {
     "@types/node": "^16.11.7",
     "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
     "handlebars": "^4.7.7",
     "nodemailer": "^6.7.1",
     "reflect-metadata": "^0.1.13",
