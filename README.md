@@ -11,6 +11,7 @@ Desenvolvido com as seguintes tecnologias:
 o NODE_TEST ou o set não funcionaram então o ENV pode ser util para quem tem Windows "
 
 - SQL Editor Beekeeper Studio
+- Insomnia Designer
 
 <h4 align="center"> 
  App NPS -  Concluido
